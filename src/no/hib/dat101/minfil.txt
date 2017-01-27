@@ -1,0 +1,3 @@
+En linje uten med  tekst
+17.14
+false
