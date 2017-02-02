@@ -11,12 +11,12 @@ public class CD {
 	private String plateselskap;
 
 	public CD() {
-		cdNummer = 0;
-		artist = "";
-		tittel = "";
-		lanseringsaar = 0;
-		sjanger = null;
-		plateselskap = "";
+//		cdNummer = 0;
+//		artist = "";
+//		tittel = "";
+//		lanseringsaar = 0;
+//		sjanger = null;
+//		plateselskap = "";
 	}
 
 	public CD(int cdNummer, String artist, String tittel, int lanseringsaar, Sjanger sjanger, String plateselskap) {

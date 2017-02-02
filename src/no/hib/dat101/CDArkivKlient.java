@@ -15,20 +15,23 @@ public class CDArkivKlient {
 		CDArkivADT cda = new CDArkiv(10);
 
 		// TEST
-//		CD cd = new CD(0, "eli", "eli", 2000, Sjanger.POP, "plateselskap");
-//		CD cd1 = new CD(1, "isak", "isak", 2009, Sjanger.POP, "plateselskap");
-//		CD cd2 = new CD(2, "eirik", "eirik", 2009, Sjanger.ROCK, "plateselskap");
-//		CD cd3 = new CD(3, "oskar", "oskar", 2009, Sjanger.OPERA, "plateselskap");
-//
-//		cda.leggTilCd(cd);
-//		cda.leggTilCd(cd1);
-//		cda.leggTilCd(cd2);
-//		cda.leggTilCd(cd3);
-//	System.out.println(cd.getCdNummer());
-//		fil.skrivTilFil(cda, "fil.txt", false);
-//		cda.slettCd(0);
-//		fil.skrivTilFil(cda, "fil.txt", false);
-//		System.out.println(cd.getCdNummer());
+		// CD cd = new CD(0, "eli", "eli", 2000, Sjanger.POP, "plateselskap");
+		// CD cd1 = new CD(1, "isak", "isak", 2009, Sjanger.POP,
+		// "plateselskap");
+		// CD cd2 = new CD(2, "eirik", "eirik", 2009, Sjanger.ROCK,
+		// "plateselskap");
+		// CD cd3 = new CD(3, "oskar", "oskar", 2009, Sjanger.OPERA,
+		// "plateselskap");
+		//
+		// cda.leggTilCd(cd);
+		// cda.leggTilCd(cd1);
+		// cda.leggTilCd(cd2);
+		// cda.leggTilCd(cd3);
+		// System.out.println(cd.getCdNummer());
+		// fil.skrivTilFil(cda, "fil.txt", false);
+		// cda.slettCd(0);
+		// fil.skrivTilFil(cda, "fil.txt", false);
+		// System.out.println(cd.getCdNummer());
 		//
 		// tekst.skrivUtStatistikk(cda);
 
@@ -62,10 +65,9 @@ public class CDArkivKlient {
 
 		// fil.lesFraFil("fil.txt");
 
-		 Meny meny = new Meny(cda);
-		 meny.start();
-//		fil.lesFraFil("fil.txt");
-
+		Meny meny = new Meny(cda);
+		meny.start();
+		// fil.lesFraFil("fil.txt");
 	}
 
 }

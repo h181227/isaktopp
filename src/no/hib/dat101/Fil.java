@@ -108,20 +108,21 @@ public class Fil {
 
 			f = new PrintWriter(new FileWriter("fil.txt"));
 
-//			CD nyCD = tekst.lesCD();
-//			cda.leggTilCd(nyCD);
+			// CD nyCD = tekst.lesCD();
+			// cda.leggTilCd(nyCD);
 			f.println(cda.hentAntall());
 			System.out.println(cda.hentAntall());
 			for (int i = 0; i < cda.hentAntall(); i++) {
-					if(cdTab[i]!=null){
-				f.print(cdTab[i].getCdNummer() + SKILLE);
-				f.print(cdTab[i].getArtist() + SKILLE);
-				f.print(cdTab[i].getTittel() + SKILLE);
-				f.print(cdTab[i].getLanseringsaar() + SKILLE);
-				f.print(cdTab[i].getSjanger() + SKILLE);
-				f.print(cdTab[i].getPlateselskap());
-				f.println();
-			}}
+				if (cdTab[i] != null) {
+					f.print(cdTab[i].getCdNummer() + SKILLE);
+					f.print(cdTab[i].getArtist() + SKILLE);
+					f.print(cdTab[i].getTittel() + SKILLE);
+					f.print(cdTab[i].getLanseringsaar() + SKILLE);
+					f.print(cdTab[i].getSjanger() + SKILLE);
+					f.print(cdTab[i].getPlateselskap());
+					f.println();
+				}
+			}
 			f.close();
 
 		} catch (IOException e) {

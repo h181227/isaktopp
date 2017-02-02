@@ -2,7 +2,7 @@ package no.hib.dat101;
 
 import java.util.Scanner;
 
-public class Meny {
+public class MenyMidlertidig {
 
 	private CDArkivADT cda;
 	private Tekstgrensesnitt tekst;
@@ -11,7 +11,7 @@ public class Meny {
 	String delstreng;
 	Fil fil = new Fil();
 
-	public Meny(CDArkivADT cda) {
+	public MenyMidlertidig(CDArkivADT cda) {
 		this.cda = cda;
 		tekst = new Tekstgrensesnitt();
 	}
@@ -108,6 +108,9 @@ public class Meny {
 			}
 		} while (valg != 7);
 	}
+	
+	
+	
 
 	public void oppretteNyttArkiv() {
 

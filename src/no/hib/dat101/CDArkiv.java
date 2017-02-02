@@ -32,28 +32,35 @@ public class CDArkiv implements CDArkivADT {
 	}
 
 	@Override
-//	public boolean slettCd(int cdNr) {
-//		// for (int i = 0; i < cdTabell.length; i++) {
-//		// if (cdTabell[i] != null) {
-//		// if (Objects.equals(cdTabell[i].getCdNummer(), cdNr)) {
-//		// cdTabell[i] = null;
-//		// System.out.println("Slettet: " + cdNr);
-//		// return true;
-//		// }
-//		// }
-//		// }
-//		return false;
-//	}
+	// public boolean slettCd(int cdNr) {
+	// // for (int i = 0; i < cdTabell.length; i++) {
+	// // if (cdTabell[i] != null) {
+	// // if (Objects.equals(cdTabell[i].getCdNummer(), cdNr)) {
+	// // cdTabell[i] = null;
+	// // System.out.println("Slettet: " + cdNr);
+	// // return true;
+	// // }
+	// // }
+	// // }
+	// return false;
+	// }
 
 	public boolean slettCd(int cdNr) {
+
+		boolean slettet = false;
 		for (int i = 0; i < cdTabell.length; i++) {
-			if(cdTabell[i]!=null){
-			if (Objects.equals(cdTabell[i].getCdNummer(), cdNr)) {
-				cdTabell[i]=null;
-				cdTabell[i] = cdTabell[cdTabell.length - 1];	
+			if (cdTabell[i] != null) {
+				if (Objects.equals(cdTabell[i].getCdNummer(), cdNr)) {
+					cdTabell[i] = null;
+					cdTabell[i] = cdTabell[cdTabell.length - 1];
+					cdTabell[cdTabell.length - 1] = null;
+					slettet = true;
+				}
 			}
-		}}
-		return false;
+
+		}
+
+		return slettet;
 	}
 
 	@Override
@@ -121,7 +128,7 @@ public class CDArkiv implements CDArkivADT {
 		int antallCDISjanger = 0;
 		for (int i = 0; i < antall; i++) {
 			if (cdTabell[i] != null) {
-				if (cdTabell[i].getSjanger().equals(sjanger)) {
+				if(Objects.equals(cdTabell[i].getSjanger(), sjanger)){
 					antallCDISjanger++;
 				}
 			}
